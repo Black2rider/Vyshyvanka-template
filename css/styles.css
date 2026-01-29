@@ -7,11 +7,13 @@
     --font-family: "Manrope", sans-serif;
 }
 
-.body {
+body {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     letter-spacing: -0.04em;
+    color: var(--white);
+    background-color: var(--black);
 }
 
 a {
@@ -41,10 +43,87 @@ img {
 
 .container {
   max-width: 375px;
-  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 }
 
+.section {
+    padding-top: 80px;
+}
+
 /************************* HEADER***********************/
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 7px;
+}
+
+
+.logo-icon {
+    display: block;
+    fill: var(--yellow);
+}
+
+/*****************  MOBILE MENU  ************************/
+
+.btn-burger {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: 36px;
+    height: 24px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.btn-burger-icon {
+    stroke: var(--yellow);
+}
+
+/************************** Section BRAND  *********************/
+.section-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.09;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+
+.brand-title-span {
+    color: var(--yellow);
+}
+
+.brand-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 154px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 36px;
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+
+.brand-icon {
+    fill: var(--yellow);
+}
