@@ -49,7 +49,23 @@ img {
 }
 
 .section {
-    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(100%);
+    clip: rect(0px, 0px, 0px, 0px);
+    margin: -1px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /************************* HEADER***********************/
@@ -92,6 +108,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 84px;
 }
 
 .brand-title {
@@ -126,4 +143,266 @@ img {
 
 .brand-icon {
     fill: var(--yellow);
+}
+
+/************************** Section ABOUT  *********************/
+.about-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-head {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+}
+
+.about-paragraph-first {
+    color: rgba(252, 249, 249, 0.4);
+    margin-bottom: 20px;
+}
+
+.about-paragraph-second {
+    color: rgba(252, 249, 249, 0.4);
+    margin-bottom: 50px;
+}
+
+.collection-graphics-grey {
+  position: absolute;
+  left: 125px;
+  bottom: 18px;
+  pointer-events: none;
+  fill: rgba(252, 249, 249, 0.1);
+}
+
+/************************** Section COLLECTION  *********************/
+.collection-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.collection-head {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.collection-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.collection-cart {
+    padding-top: 18px;
+}
+
+.cart-heading {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.collection-graphics-yellow {
+  position: absolute;
+  right: 303px;
+  top: 298px;
+  pointer-events: none;
+  fill: var(--yellow);
+  z-index: -1;
+}
+
+/************************** Section HERO  *********************/
+.hero {
+    display: block;
+    max-width: 375px;
+    height: 500px;
+    background-image: url(../images/hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px auto;
+    background-position: center center;
+}
+
+@media (min-resolution: 2x) {
+    .hero {
+        background-image: url(../images/hero2_2x.jpg);
+    }
+}
+
+/************************** Section CONTACT  *********************/
+.contact-paragraph {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+}
+
+.contact-paragraph-span {
+    color: var(--yellow);
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-input {
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 16px;
+    width: 335px;
+    height: 47px;
+    background-color: transparent;
+}
+
+.contact-form-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 145px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 36px;
+    background-color: transparent;
+}
+
+.brand-icon {
+    fill: var(--yellow);
+}
+
+/************************** Section FEEDBACK  *********************/
+.feedback-head {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 137%;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+}
+
+.feedback-item {
+    position: relative;
+}
+
+.feedback-photo {
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    width: 64px;
+    border-radius: 100%;
+    box-shadow: 0 1px 4px 0 rgba(16, 24, 40, 0.06);
+}
+
+.feedback-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-wrapper {
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 4px;
+    padding: 0px 18px 18px;
+    width: 291px;
+    height: 243px;
+}
+
+.feedback-cart {
+    padding-top: 54px;
+}
+
+.feedback-heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.feedback-paragraph {
+    max-width: 291px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(252, 249, 249, 0.4);
+}
+
+/************************** Section CONTACT  *********************/
+.footer {
+    border-top: 1px solid rgba(252, 249, 249, 0.1);
+    padding-top: 40px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 637px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 25px ;
+}
+
+.nav-item {
+    width: calc(50% - 20px);
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.nav {
+    margin-bottom: 40px;
+}
+
+.footer-paragraph {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 123%;
+    letter-spacing: -0.03em;
+}
+
+.footer-paragraph-span {
+    color: var(--yellow);
+}
+
+.footer-graphics-icon {
+  position: absolute;
+  left: -38px;
+  top: 437px;
+  pointer-events: none;
+  fill: var(--yellow);
 }
