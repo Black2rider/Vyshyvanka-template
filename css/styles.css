@@ -107,8 +107,7 @@ img {
 
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
   height: 100%;
   
 
@@ -125,8 +124,9 @@ img {
 }
 
 .mob-menu {
-  width: 100%;
+  max-width: 274px;
   height: 100%;
+
   padding: 20px;
   top: 0;
   left: 0;
@@ -149,8 +149,7 @@ img {
 
 .mob-btn-tel {
     cursor: pointer;
-    padding: 14px 28px;
-    margin: 0;
+    width: 158px;
     border: 1px solid rgba(28, 34, 37, 0.1);
     border-radius: 15px;
     max-width: 193px;
@@ -164,6 +163,8 @@ img {
 }
 
 .mob-address-link {
+    display: block;
+    padding: 12px 20px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -172,9 +173,10 @@ img {
 }
 
 .mob-close {
+    display: block;
   cursor: pointer;
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border: none;
   background-color: transparent;
 
@@ -484,10 +486,13 @@ img {
     color: rgba(252, 249, 249, 0.4);
 }
 
-/************************** Section CONTACT  *********************/
+/************************** Section FOOTER  *********************/
 .footer {
     border-top: 1px solid rgba(252, 249, 249, 0.1);
     padding-top: 40px;
+}
+
+.footer-wrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
