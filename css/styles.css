@@ -108,7 +108,7 @@ img {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 274px;
   height: 100%;
   
 
@@ -126,7 +126,7 @@ img {
 
 .mob-menu {
   height: 100%;
-  width: 100%;
+  width: 274px;
   padding: 20px;
   top: 0;
   right: 0;
@@ -228,6 +228,7 @@ img {
 }
 
 .mob-graphics-icon {
+  width: -27px;
   display: block;
   fill: rgba(28, 34, 37, 0.2);
 }
