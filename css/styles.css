@@ -141,17 +141,16 @@ img {
 
 .mob-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 186px;
+    gap: 40px;
 }
 
 .mob-btn-tel {
+    width: 158px;
+    padding: 12px 20px;
     cursor: pointer;
     border: 1px solid rgba(28, 34, 37, 0.1);
     border-radius: 15px;
-    max-width: 193px;
     background-color: transparent;
 }
 
@@ -163,7 +162,7 @@ img {
 
 .mob-address-link {
     display: block;
-    padding: 12px 20px;
+    min-width: 118px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -176,6 +175,7 @@ img {
   cursor: pointer;
   width: 36px;
   height: 36px;
+  padding: 0;
   border: none;
   background-color: transparent;
 
@@ -194,7 +194,7 @@ img {
 
 .mob-close:hover .mob-close-icon,
 .mob-close:focus .mob-close-icon {
-  fill: var(--black);
+  stroke: var(--black);
 }
 
 .mob-close-icon {
@@ -203,8 +203,10 @@ img {
 
 .mob-nav {
     display: flex;
-    justify-content: end;
     text-align: end;
+    justify-content: end;
+    margin-top: auto;
+    margin-bottom: 436px;
 }
 
 .mob-nav-item {
@@ -221,15 +223,12 @@ img {
 
 .mob-menu-graphic {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: -27px;
+  bottom: -51px;
   pointer-events: none;
 }
 
 .mob-graphics-icon {
-  width: -27px;
-  display: block;
   fill: rgba(28, 34, 37, 0.2);
 }
 
