@@ -22,11 +22,36 @@
                     <use href="./images/icons.svg#icon-graphics"></use>
                 </svg>
             </a>
-            <button class="btn-burger" type="button" data-menu-open>
-                <svg class="btn-burger-icon" width="36" height="24">
-                     <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-            </button>
+            <div class="header-social-container">
+                <ul class="header-social-list">
+                    <li class="header-social-item">
+                        <a class="header-social-link" href="">
+                            <svg class="header-social-icon" width="28" height="28">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-social-item">
+                        <a class="header-social-link" href="">
+                            <svg class="header-social-icon" width="28" height="28">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-social-item">
+                        <a class="header-social-link" href="">
+                            <svg class="header-social-icon" width="28" height="28">
+                                <use href="./images/icons.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn-burger" type="button" data-menu-open>
+                    <svg class="btn-burger-icon" width="36" height="24">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -42,11 +67,17 @@
                         <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
                 </button>
-                <img class="brand-photo"
-                    srcset="./images/hero.jpg 1x, ./images/hero_2x.jpg 2x" 
-                    src="./images/hero.jpg" 
-                    width="335" height="545" 
-                    alt="girl in Vyshyvanka"/>
+                <picture class="brand-photo-thumb">
+                    <source srcset="./images/hero_tab.jpg 1x, ./images/hero_tab_2x.jpg 2x" media="(min-width: 768px)" />
+                    <img class="brand-photo" src="./images/hero.jpg" srcset="./images/hero.jpg 1x, ./images/hero_2x.jpg 2x"
+                        alt="girl in Vyshyvanka" />
+                </picture>
+                <div class="brand-star-wrapper">
+                    <svg class="brand-star-icon" width="52" height="51" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                    <p class="brand-star-paragraph">all embroidery is made by hand</p>
+                </div>
             </div>
         </section>
         <section class="section container about-section">
@@ -57,11 +88,16 @@
                 <p class="about-paragraph-second">
                     In "Vyshyvanka Vibes" you will find various models of embroidery, from classic to modern, corresponding to the latest fashion trends. Our embroidery is made using natural fabrics and is embroidered by highly qualified craftsmen who convey the beauty of Ukrainian culture in every detail.We believe that vyshyvanka is not just clothing, but a symbol of national pride, the heritage of our ancestors and a way of expressing one's individuality. Each embroidery from "Vyshyvanka Vibes" has its own unique history and symbolism, which gives it a special meaning.
                 </p>
-                <img class="about-photo"
-                    srcset="./images/girl_and_boy.jpg 1x, ./images/girl_and_boy_2x.jpg 2x" 
-                    src="./images/girl_and_boy.jpg" 
-                    width="335" height="499" 
-                    alt="Vyshyvanka style"/>
+                <picture class="about-photo-thumb">
+                    <source 
+                        srcset="./images/girl_and_boy_tab.jpg 1x, ./images/girl_and_boy_tab_2x.jpg 2x" 
+                        media="(min-width: 768px)" />
+                    <img class="brand-photo" 
+                        src="./images/girl_and_boy.jpg" 
+                        width="335" height="499"
+                        srcset="./images/girl_and_boy.jpg 1x, ./images/girl_and_boy_2x.jpg 2x"
+                        alt="Vyshyvanka style" />
+                </picture>
                 <svg class="collection-graphics-grey" width="459" height="408" aria-hidden="true">
                     <use href="./images/icons.svg#icon-graphics"></use>
                 </svg>
