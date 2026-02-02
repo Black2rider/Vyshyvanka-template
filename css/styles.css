@@ -7,6 +7,12 @@
     --font-family: "Manrope", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-family);
     font-weight: 400;
@@ -143,13 +149,20 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 100px;
 }
 
-.mob-btn-tel {
-    width: 158px;
+.mob-link-tel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 158px;
     padding: 12px 20px;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: var(--black);
     border: 1px solid rgba(28, 34, 37, 0.1);
     border-radius: 15px;
     background-color: transparent;
@@ -157,18 +170,8 @@ img {
 
 .mob-btn-tel:hover,
 .mob-btn-tel:focus {
-    border: 1px solid var(--yellow);
+    border: 1px solid var(--black);
 
-}
-
-.mob-address-link {
-    display: block;
-    min-width: 118px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    color: var(--black);
 }
 
 .mob-close {
@@ -206,6 +209,8 @@ img {
     display: flex;
     text-align: end;
     justify-content: end;
+    margin-top: 50%;
+    margin-bottom: 251px;
 }
 
 .mob-nav-item {
@@ -268,6 +273,13 @@ img {
     padding: 14px 36px;
     margin-bottom: 40px;
     background-color: transparent;
+    transition: 
+                border 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.brand-btn:hover,
+.brand-btn:focus {
+    border: 1px solid var(--yellow);
 }
 
 .brand-icon {
@@ -355,6 +367,7 @@ img {
 /************************** Section HERO  *********************/
 .hero {
     display: block;
+    width: 100%;
     max-width: 375px;
     height: 500px;
     background-image: url(../images/hero2.jpg);
@@ -398,12 +411,31 @@ img {
 }
 
 .contact-form-input {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: var(--white);
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 15px;
     padding: 14px 16px;
     width: 335px;
     height: 47px;
     background-color: transparent;
+    transition: 
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+}
+
+.contact-form-input:hover,
+.contact-form-input:focus {
+    outline: none;
+    border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
+.contact-form-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(252, 249, 249, 0.5);
 }
 
 .contact-form-btn {
@@ -421,6 +453,11 @@ img {
     border-radius: 15px;
     padding: 14px 36px;
     background-color: transparent;
+}
+
+.contact-form-btn:hover,
+.contact-form-btn:focus {
+    border: 1px solid var(--yellow);
 }
 
 .brand-icon {
@@ -459,8 +496,7 @@ img {
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 4px;
     padding: 0px 18px 18px;
-    width: 291px;
-    height: 243px;
+    width: 335px;
 }
 
 .feedback-cart {
@@ -518,6 +554,12 @@ img {
     line-height: 129%;
     text-transform: uppercase;
     color: var(--white);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: var(--yellow);
 }
 
 .footer-paragraph {
